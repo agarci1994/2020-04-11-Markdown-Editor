@@ -9,6 +9,7 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "codemirror": "^5.52.2",
+    "electron-packager": "^14.2.1",
     "marked": "^0.8.2",
     "react": "^16.13.1",
     "react-codemirror2": "^7.1.0",
@@ -21,7 +22,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "electron-start": "electron ."
+    "electron-start": "electron .",
+    "package-win": "electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --icon=src/assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName='Marked'"
   },
   "eslintConfig": {
     "extends": "react-app"
